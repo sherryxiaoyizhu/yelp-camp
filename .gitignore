@@ -1,0 +1,5 @@
+.env
+/node_modules
+/diagnostic.data
+/journal
+seeds.js
