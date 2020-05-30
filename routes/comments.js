@@ -1,8 +1,8 @@
 var express    = require("express"),
-	router     = express.Router({mergeParams: true}),
-	Campground = require("../models/campground"),
-	Comment    = require("../models/comment"),
-	middleware = require("../middleware");
+    router     = express.Router({mergeParams: true}),
+    Campground = require("../models/campground"),
+    Comment    = require("../models/comment"),
+    middleware = require("../middleware");
 
 // comments new
 router.get("/new", middleware.isLoggedIn, function(req, res){

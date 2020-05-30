@@ -9,11 +9,7 @@ var campgroundSchema = new mongoose.Schema({
 	location: String,
 	lat: Number,
 	lng: Number,
-	createdAt: 
-		{
-			type: Date,
-			defualt: Date.now
-		},
+	createdAt: { type: Date, defualt: Date.now },
 	author: {
 		id: {
 			type: mongoose.Schema.Types.ObjectId,
@@ -22,11 +18,11 @@ var campgroundSchema = new mongoose.Schema({
 		username: String
 	},
    	comments: [
-      	{
-         	type: mongoose.Schema.Types.ObjectId,
-         	ref: "Comment"
-      	}
-   	]
+		{
+			type: mongoose.Schema.Types.ObjectId,
+			ref: "Comment"
+		}
+	]
 });
  
 module.exports = mongoose.model("Campground", campgroundSchema);

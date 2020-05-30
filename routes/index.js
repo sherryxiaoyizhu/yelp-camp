@@ -1,7 +1,7 @@
 var express  = require("express"),
-	router   = express.Router(),
-	passport = require("passport"),
-	User     = require("../models/user");
+    router   = express.Router(),
+    passport = require("passport"),
+    User     = require("../models/user");
 
 // root route
 router.get("/", function(req, res){
@@ -16,6 +16,9 @@ router.get("/register", function(req, res){
 // handle sign up logic
 router.post("/register", function(req, res){
 	var newUser = new User({username: req.body.username});
+	if(req.body.adminCode === "secretcode123"){
+		newUser.isAdmin = true;
+	}
 	User.register(newUser, req.body.password, function(err, user){
 		if(err){
 			req.flash("error", err.message);
@@ -47,7 +50,7 @@ router.post("/login", passport.authenticate("local",
 // logout route
 router.get("/logout", function(req, res){
 	req.logout();
-	req.flash("success", "You have been successfully logged out!");
+	req.flash("success", "See you later!");
 	res.redirect("/campgrounds");
 });
 

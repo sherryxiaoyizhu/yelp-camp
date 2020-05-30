@@ -2,22 +2,22 @@ require('dotenv').config();
 
 var bodyParser         = require("body-parser"),
     mongoose           = require("mongoose"),
-	flash              = require("connect-flash"),
-	passport           = require("passport"),
-	LocalStrategy      = require("passport-local").Strategy,
+    flash              = require("connect-flash"),
+    passport           = require("passport"),
+    LocalStrategy      = require("passport-local").Strategy,
     methodOverride     = require("method-override"),
     express            = require("express"),
     app                = express(),
-	expressSanitizer   = require("express-sanitizer"),
+    expressSanitizer   = require("express-sanitizer"),
     Campground         = require("./models/campground"),
     Comment            = require("./models/comment"),
-	User               = require("./models/user"),
+    User               = require("./models/user"),
     seedDB             = require("./seeds.js");
 
 // REQUIRING ROUTES
 var campgroundRoutes   = require("./routes/campgrounds"),
- 	commentRoutes      = require("./routes/comments"),
-	indexRoutes        = require("./routes/index");
+    commentRoutes      = require("./routes/comments"),
+    indexRoutes        = require("./routes/index");
 
 // CONNECT TO MongoDB
 mongoose.connect("mongodb://localhost:27017/yelp_camp", { useNewUrlParser: true, useUnifiedTopology: true });
