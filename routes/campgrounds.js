@@ -33,13 +33,13 @@ router.post("/", middleware.isLoggedIn, function(req, res){
 	var price = req.body.campground.price;
 	var desc = req.body.campground.description;
 	var dt = req.body.campground.createdAt;
-	console.log(name);
 	var author = {
 		id: req.user._id,
 		username: req.user.username
 	}
 	geocoder.geocode(req.body.campground.location, function (err, data) {
 		if (err || !data.length) {
+			console.log(err);
 			req.flash('error', 'Invalid address');
 			return res.redirect('back');
 		}

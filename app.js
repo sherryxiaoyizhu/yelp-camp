@@ -20,18 +20,18 @@ var campgroundRoutes   = require("./routes/campgrounds"),
     indexRoutes        = require("./routes/index");
 
 // CONNECT TO MongoDB
-mongoose.connect("mongodb://localhost:27017/yelp_camp", { useNewUrlParser: true, useUnifiedTopology: true });
+//mongoose.connect("mongodb://localhost:27017/yelp_camp", { useNewUrlParser: true, useUnifiedTopology: true });
 
-// Alternatively, connect to online MongoDB server
-// mongoose.connect("mongodb+srv://xzhu:myRealPassword@cluster0-djrck.mongodb.net/test?retryWrites=true&w=majority", { 
-// 	useNewUrlParser: true, 
-// 	useUnifiedTopology: true,
-// 	useCreateIndex: true
-// }).then(() => {
-// 	console.log("Connected to MongoDB!");
-// }).catch(err => {
-// 	console.log("ERROR:", err); 
-// });
+// Connect to MongoDB Atlas online server
+mongoose.connect(process.env.MONGO_URL, { 
+	useNewUrlParser: true, 
+	useUnifiedTopology: true,
+	useCreateIndex: true
+}).then(() => {
+	console.log("Connected to MongoDB!");
+}).catch(err => {
+	console.log("ERROR:", err); 
+});
 
 // FIX DEPRECATION WARNINGS
 mongoose.set('useFindAndModify', false);
