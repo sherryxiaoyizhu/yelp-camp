@@ -26,7 +26,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "statr": "node app.js"
+    "start": "node app.js"
   },
   "author": "Xiaoyi (Sherry) Zhu",
   "license": "ISC"
