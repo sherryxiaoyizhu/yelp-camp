@@ -38,7 +38,8 @@ Node.js, Express.js, MongoDB
 
 #### Platform
 
-- [goormIDE](https://ide.goorm.io/)
+- [goormIDE](https://ide.goorm.io/) - an online integrated development environment
+- [Heroku](https://www.heroku.com/) - a cloud platform that runs apps in virtual containers
 
 #### Front-end
 - [JavaScript](https://www.javascript.com/) - high-level, interpreted programming language
