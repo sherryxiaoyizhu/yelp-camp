@@ -2,7 +2,6 @@
 
 <header class="jumbotron">
 	<h1><i class="fas fa-campground"></i> Welcome to YelpCamp!</h1>
-	<!-- Leave space on edge for smaller sized screen -->
 	<div class="container">
 		<p>View our hand-picked campgrounds from all over the world</p>
 		<p>
@@ -19,7 +18,6 @@
 	
 <div class="row text-center" style="display:flex; flex-wrap:wrap;">
 	<% campgrounds.forEach(function(campground){ %>
-		<!-- responsive to different screen size, note 12 units for full screen -->
 		<div class="col-md-3 col-sm-6"> 
 			<div class="thumbnail">
 				<img src="<%= campground.image %>">

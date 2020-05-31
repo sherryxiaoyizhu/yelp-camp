@@ -1,53 +1,66 @@
 # YelpCamp
-
-YelpCamp is a full stack web based application that I made with a non-relational database, which posts crowd-sourced reviews and photos about local campgrounds.
+YelpCamp is a full-stack web-based application that I made with RESTful routing and a non-relational database, which posts crowd-sourced reviews and photos about local campgrounds.
 
 ### Stack
-
-NodeJS, Express, MongoDB
+Node.js, Express.js, MongoDB
 
 ### Features
 
-Users
+#### Authentication
 
-* View campgrounds available
-* Sign-up with credentials and create account
-* Login with credentials
-* Create, post, edit, and comment on campgrounds
-* Remove own posts and comments
+- User login with username and password
+- Admin sign up with admin code
 
-Campgrounds
+#### Authorization
 
-* View a variety of campgrounds
-* Select individual campgrounds for further information
-* Each has description, image, location and price
-* Each campsite location is rendered using a Google Maps API plugin
+- One cannot manage posts and without being authenticated
+- One cannot edit or delete posts and comments created by other users
+- Admin can manage all posts and comments
+
+#### Users
+- View campgrounds available
+- Sign up account with credentials
+- Login with credentials
+- Create, post, edit, and comment on campgrounds
+- Remove own posts and comments
+- Flash messages responding to users' interaction with the app
+
+#### Campgrounds
+- View a variety of campgrounds on home page
+- Select individual campgrounds for further information
+- Each campground has a name, author, description, image, location, price, and associated comments
+- Each campsite location is rendered using a Google Maps API plugin
+
+#### Webpage
+- Responsive web design
 
 ### Technology
 
-Front-end
+#### Platform
 
-* Javascript - high-level, interpreted programming language
-* HTML - standard mark-up language for creating web pages and web applications
-* Bootstrap - open source toolkit for developing with HTML, CSS, and JS.
-* jQuery - cross-platform JavaScript library designed to simplify the client-side scripting of HTML
+- [goormIDE](https://ide.goorm.io/)
 
-Back-end
+#### Front-end
+- [JavaScript](https://www.javascript.com/) - high-level, interpreted programming language
+- [HTML](https://en.wikipedia.org/wiki/HTML) - standard markup language for creating web pages and web applications
+- [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - style sheet language used for describing the presentation of a document written in a markup language like HTML
+- [EJS](https://ejs.co/) - templating language that generateS HTML markup with plain JavaScript
+- [Bootstrap](https://getbootstrap.com/) - an open-source toolkit for developing with HTML, CSS, and JS
+- [jQuery](https://jquery.com/) - cross-platform JavaScript library designed to simplify the client-side scripting of HTML
 
-* Node.js - JavaScript run-time environment that executes JavaScript code server-side
-* Express.js - minimalist web framework for Node.js
-* mongoDB - open-source cross-platform document-oriented database program
-* mongoose.js - mongodb object modelling for Node.js
-* moment.js - parse, validate, manipulate, and display dates and times in JavaScript
-* node-geocoder - Node.js library for geocoding and reverse geocoding
+#### Back-end
+- [Node.js](https://nodejs.org/en/) - JavaScript run-time environment that executes JavaScript code server-side
+- [Express.js](https://expressjs.com/) - minimalist web framework for Node.js
+- [mongoDB](https://www.mongodb.com/) - open-source cross-platform document-oriented database program
+- [mongoose.js](https://mongoosejs.com/) - MongoDB object modeling for Node.js
+- [moment.js](https://momentjs.com/) - parse, validate, manipulate, and display dates and times in JavaScript
+- [node-geocoder](https://www.npmjs.com/package/node-geocoder) - Node.js library for geocoding and reverse geocoding
 
-Middleware
+#### Middleware
+- [express-session](https://www.npmjs.com/package/express-session) - session middleware for Express.js
+- [passport.js](http://www.passportjs.org/) - authentication for Node.js
+- [connect-flash](https://www.npmjs.com/package/connect-flash) - flash message middleware for Connect and Express.js
+- [body-parser](https://www.npmjs.com/package/body-parser) - Node.js body parsing middleware
 
-* express-session - session middleware for Express.js
-* passport.js - authentication for Node.js
-* connect-flash - flash message middleware for Connect and Express.js
-* body-parser - Node.js body parsing middleware
-
-### Source:
+### Source
 The Web Developer Bootcamp on Udemy by Colt Steele and Ian Schoonover
-
