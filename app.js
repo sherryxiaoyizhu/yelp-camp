@@ -11,8 +11,8 @@ var bodyParser         = require("body-parser"),
     expressSanitizer   = require("express-sanitizer"),
     Campground         = require("./models/campground"),
     Comment            = require("./models/comment"),
-    User               = require("./models/user"),
-    seedDB             = require("./seeds.js");
+    User               = require("./models/user");
+    //seedDB             = require("./seeds.js");
 
 // REQUIRING ROUTES
 var campgroundRoutes   = require("./routes/campgrounds"),
