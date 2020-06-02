@@ -1,7 +1,7 @@
 # YelpCamp
 YelpCamp is a full-stack web-based application that I made with RESTful routing and a non-relational database, which posts crowd-sourced reviews and photos about local campgrounds.
 
-##### Check out [YelpCamp App Demo](https://webdev-yelpcamp-sherry-xzhu.herokuapp.com/) to learn more!
+#### Check out [YelpCamp App Demo](https://webdev-yelpcamp-sherry-xzhu.herokuapp.com/) to learn more!
 
 - Login username: guest1
 - Login password: password123
