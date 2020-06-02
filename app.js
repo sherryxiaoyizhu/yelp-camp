@@ -23,7 +23,7 @@ var campgroundRoutes   = require("./routes/campgrounds"),
 //mongoose.connect("mongodb://localhost:27017/yelp_camp", { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Connect to MongoDB Atlas online server
-mongoose.connect(process.env.MONGO_URL, { 
+mongoose.connect(process.env.DATABASE_URL, { 
 	useNewUrlParser: true, 
 	useUnifiedTopology: true,
 	useCreateIndex: true
