@@ -4,7 +4,7 @@ var express    = require("express"),
     Comment    = require("../models/comment"),
     middleware = require("../middleware");
 
-// comments new
+// NEW COMMENT GET ROUTE
 router.get("/new", middleware.isLoggedIn, function(req, res){
 	Campground.findById(req.params.id, function(err, foundCampground){
 		if(err){
@@ -55,7 +55,7 @@ router.delete("/:comment_id", middleware.checkCommentOwnership, function(req, re
 	});
 });
 
-// comments create
+// COMMENT CREATE ROUTE
 router.post("/", middleware.isLoggedIn, function(req, res){
 	// lookup campground using ID
 	Campground.findById(req.params.id, function(err, foundCampground){

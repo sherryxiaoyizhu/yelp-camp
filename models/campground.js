@@ -1,4 +1,4 @@
-var mongoose = require("mongoose");
+var mongoose = require("mongoose"); 
  
 // MONGOOSE/ MODEL CONFIG
 var campgroundSchema = new mongoose.Schema({

@@ -1,5 +1,4 @@
 // ALL MIDDLEWARE GOES HERE
-
 var Campground = require("../models/campground"),
     Comment    = require("../models/comment");
 
