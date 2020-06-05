@@ -1,10 +1,7 @@
 # YelpCamp
 YelpCamp is a full-stack web-based application that I made with RESTful routing and a non-relational database, which posts crowd-sourced reviews and photos about local campgrounds.
 
-#### Check out [YelpCamp App Demo](https://webdev-yelpcamp-sherry-xzhu.herokuapp.com/) to learn more!
-
-- Login username: guest1
-- Login password: password123
+#### Try out the Demo App features [here](https://webdev-yelpcamp-sherry-xzhu.herokuapp.com/)!
 
 ### Stack
 Node.js, Express.js, MongoDB
@@ -28,22 +25,23 @@ Node.js, Express.js, MongoDB
 - Login with credentials
 - Create, post, edit, and comment on campgrounds
 - Remove own posts and comments
+- Reset password through a link sent to user's email
 - Flash messages responding to users' interaction with the app
 
 #### Campgrounds
 - View a variety of campgrounds on home page
 - Select individual campgrounds for further information
-- Each campground has a name, author, description, image, location, price, and associated comments
+- Each campground has a name, author, description, image, location, price, timestamp since created, and associated comments
 - Each campsite location is rendered using a Google Maps API plugin
 
 #### Webpage
-- Responsive web design
+- Responsive web design that automatically adjusts for different screen sizes
 
 ### Technology
 
 #### Platform
 
-- [goormIDE](https://ide.goorm.io/) - an online integrated development environment
+- [GoormIDE](https://ide.goorm.io/) - an online integrated development environment
 - [Heroku](https://www.heroku.com/) - a cloud platform that runs apps in virtual containers
 
 #### Front-end
