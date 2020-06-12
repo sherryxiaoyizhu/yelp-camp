@@ -2,6 +2,7 @@ var express    = require("express"),
     router     = express.Router(),
     passport   = require("passport"),
     User       = require("../models/user"),
+	Campground = require("../models/campground"),
     async      = require("async"),
     nodemailer = require("nodemailer"),
     crypto     = require("crypto");
@@ -20,6 +21,9 @@ router.get("/register", function(req, res){
 router.post("/register", function(req, res){
 	var newUser = new User({
 		username: req.body.username,
+		firstName: req.body.firstName,
+		lastName: req.body.lastName,
+		avatar: req.body.avatar,
 		email: req.body.email
 	});
 	if(req.body.adminCode === process.env.SECRETE_CODE){
@@ -174,6 +178,23 @@ router.post('/reset/:token', function(req, res) {
 		}
 	], function(err) {
 		res.redirect('/campgrounds');
+	});
+});
+
+// user profile
+router.get("/users/:id", function(req, res){
+	User.findById(req.params.id, function(err, foundUser){
+		if(err){
+			req.flash("error", "Oops, something went wrong...");
+			res.redirect("/");
+		}
+		Campground.find().where("author.id").equals(foundUser._id).exec(function(err, foundCampgrounds){
+			if(err){
+				req.flash("error", "Oops, something went wrong...");
+				res.redirect("/");
+			}
+			res.render("users/show", {user: foundUser, campgrounds: foundCampgrounds});
+		});
 	});
 });
 

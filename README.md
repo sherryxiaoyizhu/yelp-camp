@@ -27,6 +27,7 @@ Node.js, Express.js, MongoDB
 - Remove own posts and comments
 - Reset password through a link sent to user's email
 - Look up campgrounds using fuzzy search box
+- View user profiles
 - Flash messages responding to users' interaction with the app
 
 #### Campgrounds
