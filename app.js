@@ -1,6 +1,7 @@
 require('dotenv').config();
 
-var bodyParser         = require("body-parser"),
+var editorconfig = require('editorconfig'),
+	bodyParser         = require("body-parser"),
     mongoose           = require("mongoose"),
     flash              = require("connect-flash"),
     passport           = require("passport"),
