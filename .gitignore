@@ -1,5 +1,6 @@
+seeds.js
 .env
+.editorconfig
 /node_modules
 /diagnostic.data
 /journal
-seeds.js
