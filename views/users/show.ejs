@@ -3,11 +3,16 @@
 <div class="row">
 	<div class="col-md-4">
 		<h1><%= user.firstName + " " + user.lastName %></h1>
-		<div class="thumbnail">
-			<img src="<%= user.avatar %>" alt="user profile image">
-			<div class="caption"><a href="mailto: <%= user.email%>"><%= user.email %></a></div>
+		<div class="card">
+			<div class="card-body">
+				<img src="<%= user.avatar %>" class="card-img-top" alt="user profile image">
+				<div class="caption"><a href="mailto: <%= user.email%>"><%= user.email %></a></div>
+				<hr>
+				<p class="card-text">
+					Porta lorem mollis aliquam ut porttitor leo a. Id diam vel quam elementum pulvinar etiam non quam lacus. Aliquam vestibulum morbi blandit cursus risus at. In ante metus dictum at tempor. Enim diam vulputate ut pharetra sit amet aliquam id diam. Volutpat ac tincidunt vitae semper quis lectus nulla at. 
+				</p>
+			</div>
 		</div>
-		Porta lorem mollis aliquam ut porttitor leo a. Id diam vel quam elementum pulvinar etiam non quam lacus. Aliquam vestibulum morbi blandit cursus risus at. In ante metus dictum at tempor. Enim diam vulputate ut pharetra sit amet aliquam id diam. Volutpat ac tincidunt vitae semper quis lectus nulla at. 
 	</div>
 	<div class="col-md-8">
 		<h3><%= user.username %>'s campgrounds:</h3>

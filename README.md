@@ -51,7 +51,7 @@ Node.js, Express.js, MongoDB
 - [HTML](https://en.wikipedia.org/wiki/HTML) - standard markup language for creating web pages and web applications
 - [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - style sheet language used for describing the presentation of a document written in a markup language like HTML
 - [EJS](https://ejs.co/) - templating language that generateS HTML markup with plain JavaScript
-- [Bootstrap](https://getbootstrap.com/) - an open-source toolkit for developing with HTML, CSS, and JS
+- [Bootstrap 4](https://getbootstrap.com/) - an open-source toolkit for developing with HTML, CSS, and JS
 - [jQuery](https://jquery.com/) - cross-platform JavaScript library designed to simplify the client-side scripting of HTML
 
 #### Back-end
