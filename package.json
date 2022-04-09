@@ -17,7 +17,7 @@
     "locus": "^2.0.4",
     "method-override": "^3.0.0",
     "module_name": "^1.0.0",
-    "moment": "^2.26.0",
+    "moment": "^2.29.2",
     "mongodb": "^3.5.6",
     "mongoose": "^5.9.16",
     "node-geocoder": "^3.27.0",
