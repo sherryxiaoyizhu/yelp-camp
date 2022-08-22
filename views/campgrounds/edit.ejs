@@ -1,34 +1,62 @@
-<%- include("../partials/header") %> 
+<%- include("../partials/header") %>
 
 <div class="row justify-content-center">
-	<div class="col-md-12 text-center">
-		<h1>Edit Camprgound:</h1>
-		<h3><%= campground.name %></h3>
-	</div>
-	<div class="col-xs-10 col-sm-8 col-md-6 col-lg-4">
-		<form action="/campgrounds/<%= campground._id %>?_method=PUT" method="POST">
-			<div class="form-group">
-				<input class="form-control" type="text" name="campground[name]" value="<%= campground.name %>">
-			</div>
-			<div class="form-group">
-				<input class="form-control" type="number" name="campground[price]" value="<%= campground.price %>" min="0.01" step="0.01">
-			</div>
-			<div class="form-group">
-				<input class="form-control" type="text" name="campground[image]" value="<%= campground.image %>">
-			</div>
-			<div class="form-group">
-				<input class="form-control" type="text" name="campground[description]" value="<%= campground.description %>">
-			</div>
-			<div class="form-group">
-				<label for="location">Location</label>
-				<input class="form-control" type="text" name="campground[location]" id="location" value="<%= campground.location %>">
-			</div>
-			<div class="form-group">
-				<button class="btn btn-lg btn-primary btn-block">Submit!</button>
-			</div>
-		</form>
-		<a href="/campgrounds">Go back</a>
-	</div>
+  <div class="col-md-12 text-center">
+    <h1>Edit Camprgound:</h1>
+    <h3><%= campground.name %></h3>
+  </div>
+  <div class="col-xs-10 col-sm-8 col-md-6 col-lg-4">
+    <form action="/campgrounds/<%= campground._id %>?_method=PUT" method="POST">
+      <div class="form-group">
+        <input
+          class="form-control"
+          type="text"
+          name="campground[name]"
+          value="<%= campground.name %>"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          class="form-control"
+          type="number"
+          name="campground[price]"
+          value="<%= campground.price %>"
+          min="0.01"
+          step="0.01"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          class="form-control"
+          type="text"
+          name="campground[image]"
+          value="<%= campground.image %>"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          class="form-control"
+          type="text"
+          name="campground[description]"
+          value="<%= campground.description %>"
+        />
+      </div>
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input
+          class="form-control"
+          type="text"
+          name="campground[location]"
+          id="location"
+          value="<%= campground.location %>"
+        />
+      </div>
+      <div class="form-group">
+        <button class="btn btn-lg btn-primary btn-block">Submit!</button>
+      </div>
+    </form>
+    <a href="/campgrounds">Go back</a>
+  </div>
 </div>
 
 <%- include("../partials/footer") %>

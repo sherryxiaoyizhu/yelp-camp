@@ -1,9 +1,9 @@
 # YelpCamp
-YelpCamp is a full-stack web-based application that I made with RESTful routing and a non-relational database, which posts crowd-sourced reviews and photos about local campgrounds.
 
-#### Try out the Demo App features [here](https://webdev-yelpcamp-sherry-xzhu.herokuapp.com/)!
+[YelpCamp](https://webdev-yelpcamp-sherry-xzhu.herokuapp.com/) is a full-stack web-based application that I made with RESTful routing and a non-relational database, which posts crowd-sourced reviews and photos about local campgrounds.
 
 ### Stack
+
 Node.js, Express.js, MongoDB
 
 ### Features
@@ -20,6 +20,7 @@ Node.js, Express.js, MongoDB
 - Admin can manage all posts and comments
 
 #### Users
+
 - View campgrounds available
 - Sign up account with credentials
 - Login with credentials
@@ -31,12 +32,14 @@ Node.js, Express.js, MongoDB
 - Flash messages responding to users' interaction with the app
 
 #### Campgrounds
+
 - View a variety of campgrounds on home page
 - Select individual campgrounds for further information
 - Each campground has a name, author, description, image, location, price, timestamp since created, and associated comments
 - Each campsite location is rendered using a Google Maps API plugin
 
 #### Webpage
+
 - Responsive web design that automatically adjusts for different screen sizes
 
 ### Technology
@@ -47,6 +50,7 @@ Node.js, Express.js, MongoDB
 - [Heroku](https://www.heroku.com/) - a cloud platform that runs apps in virtual containers
 
 #### Front-end
+
 - [JavaScript](https://www.javascript.com/) - high-level, interpreted programming language
 - [HTML](https://en.wikipedia.org/wiki/HTML) - standard markup language for creating web pages and web applications
 - [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - style sheet language used for describing the presentation of a document written in a markup language like HTML
@@ -55,6 +59,7 @@ Node.js, Express.js, MongoDB
 - [jQuery](https://jquery.com/) - cross-platform JavaScript library designed to simplify the client-side scripting of HTML
 
 #### Back-end
+
 - [Node.js](https://nodejs.org/en/) - JavaScript run-time environment that executes JavaScript code server-side
 - [Express.js](https://expressjs.com/) - minimalist web framework for Node.js
 - [mongoDB](https://www.mongodb.com/) - open-source cross-platform document-oriented database program
@@ -63,10 +68,12 @@ Node.js, Express.js, MongoDB
 - [node-geocoder](https://www.npmjs.com/package/node-geocoder) - Node.js library for geocoding and reverse geocoding
 
 #### Middleware
+
 - [express-session](https://www.npmjs.com/package/express-session) - session middleware for Express.js
 - [passport.js](http://www.passportjs.org/) - authentication for Node.js
 - [connect-flash](https://www.npmjs.com/package/connect-flash) - flash message middleware for Connect and Express.js
 - [body-parser](https://www.npmjs.com/package/body-parser) - Node.js body parsing middleware
 
 ### Source
+
 The Web Developer Bootcamp on Udemy by Colt Steele and Ian Schoonover
