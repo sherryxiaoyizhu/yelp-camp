@@ -6,6 +6,15 @@
 
 Node.js, Express.js, MongoDB
 
+### Environment & Setup
+
+- Run `npm install` to download all dependencies from package.json.
+- Create a .env file in the root of project directory, template code is given in `.env-template`:
+  ```
+  PORT=3000
+  DATABASE_URL='my_database_url'
+  ```
+
 ### Features
 
 #### Authentication
