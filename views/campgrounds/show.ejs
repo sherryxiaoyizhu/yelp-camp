@@ -1,4 +1,4 @@
-<%- include("../partials/header") %>
+<%- include("../partials/header") %> <%-require('dotenv').config() %>
 
 <div class="row">
   <div class="col-md-3">
@@ -126,7 +126,7 @@
 <script
   async
   defer
-  src="https://maps.googleapis.com/maps/api/js?key=${process.env.MAP_API_KEY}&callback=initMap"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcmdzhdjfryLY7uRMUWMzWQiorpyyNkx8&callback=initMap"
 ></script>
 
 <%- include("../partials/footer") %>
