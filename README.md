@@ -9,7 +9,8 @@ Node.js, Express.js, MongoDB
 ### Environment & Setup
 
 - Run `npm install` to download all dependencies from package.json.
-- Create a `.env` file in the root of project directory, template code is given in `.env-template`.
+- Recreate a `.env` file in the root of project directory, template code is given in `.env-template`.
+- Ensure that the database cluster is active in MongoDB.
 
 ### Features
 
