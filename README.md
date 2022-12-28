@@ -1,6 +1,6 @@
 # YelpCamp
 
-[YelpCamp](https://webdev-yelpcamp-sherry-xzhu.herokuapp.com/) is a full-stack web-based application that I made with RESTful routing and a non-relational database, which posts crowd-sourced reviews and photos about local campgrounds.
+[YelpCamp](https://webdev-yelpcamp-sherry-xzhu.herokuapp.com/) is a full-stack web-based application using RESTful APIs and MongoDB database, which promotes crowd-sourced reviews and photos about local campgrounds.
 
 ### Stack
 
@@ -59,7 +59,7 @@ Node.js, Express.js, MongoDB
 - [JavaScript](https://www.javascript.com/) - high-level, interpreted programming language
 - [HTML](https://en.wikipedia.org/wiki/HTML) - standard markup language for creating web pages and web applications
 - [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - style sheet language used for describing the presentation of a document written in a markup language like HTML
-- [EJS](https://ejs.co/) - templating language that generateS HTML markup with plain JavaScript
+- [EJS](https://ejs.co/) - templating language that generates HTML markup with plain JavaScript
 - [Bootstrap 4](https://getbootstrap.com/) - an open-source toolkit for developing with HTML, CSS, and JS
 - [jQuery](https://jquery.com/) - cross-platform JavaScript library designed to simplify the client-side scripting of HTML
 
